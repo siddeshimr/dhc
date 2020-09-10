@@ -1,0 +1,138 @@
+
+{% load static %} 
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Navbar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slideshow.css' %}">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="{% static 'js/slideshow.js' %}"></script>
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm fixed-top">
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">DHC</label>
+      <ul class="nav">
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Doctors</a></li>
+        <li><a href="#">Patients</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+    <section></section>
+    <!--------------------Slidwshow images---------------------->
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="{% static 'images\slide1.png' %}" style="width:100%">
+        <div class="text">Caption Text</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="{% static 'images\slide2.jpg' %}" style="width:100%">
+        <div class="text">Caption Two</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="{% static 'images\slide3.jpg' %}" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+      
+<!----------footer-------------------------------------->
+    <div class="content1">
+      <div class="text">
+Fully Responsive Footer Section</div>
+<div class="p">
+HTML and CSS (Flexbox)</div>
+</div>
+<footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2>
+About us</h2>
+<div class="content">
+            <p>
+              DHC is an organisation formed in 2004 by local GPs to provide high quality, local and timely outpatient appointments initially for patients of the Dorking practices. In recent years we have widened our mission to provide services for patients throughout Surrey and Sussex. Outpatient services are available at Dorking Hospital and at Holmhurst Medical Centre, Redhill.</p>
+<div class="social">
+              <a href="https://www.facebook.com/siddesh.drjtr"><span class="fab fa-facebook-f"></span></a>
+              <a href="#"><span class="fab fa-twitter"></span></a>
+              <a href="#"><span class="fab fa-instagram"></span></a>
+              <a href="#"><span class="fab fa-youtube"></span></a>
+            </div>
+</div>
+</div>
+<div class="center box">
+          <h2>
+Address</h2>
+<div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">Chandra Layout</span>
+            </div>
+<div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">+91-9632318219</span>
+            </div>
+<div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text">siddu@gmail.com</span>
+            </div>
+</div>
+</div>
+<div class="right box">
+          <h2>
+Contact us</h2>
+<div class="content">
+            <form action="#">
+              <div class="email">
+                <div class="text">
+Email *</div>
+<input type="email" required>
+              </div>
+<div class="msg">
+                <div class="text">
+Message *</div>
+<!-- NOTE: Due to more textarea tag I got an error. So I changed the textarea name to changeit. Please change that changeit name to textarea -->
+<changeit id=".msgForm" rows="2" cols="25" required></changeit> <!-- replace this changeit name to textarea -->
+              
+              <br />
+<div class="btn">
+<button type="submit" class="btn btn-danger">Send</button>
+              </div>
+<div class="bottom">
+<center>
+          <span class="credit">Created By <a href="#">siddesh</a> | </span>
+          <span class="far fa-copyright"></span> 2020 All rights reserved.
+        </center>
+</div>
+
+  </body>
+</html>
